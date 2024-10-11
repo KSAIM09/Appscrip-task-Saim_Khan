@@ -7,6 +7,7 @@ import {
 import { faHeart, faUser } from "@fortawesome/free-regular-svg-icons";
 import "./Navbar.style.css";
 import { Link } from "react-router-dom"; 
+import Lodo from "../../../assests/Logo.svg";
 
 
 const Navbar = () => {
@@ -23,7 +24,7 @@ const Navbar = () => {
             size="xl"
             className="navigationDrawer"
           />
-          <div><img src="../../assests/Logo.svg" alt=""></img></div>
+          <div><img src={Lodo} alt=""></img></div>
         </div>
         <div className="brand-name">
           <h1>LOGO</h1>
