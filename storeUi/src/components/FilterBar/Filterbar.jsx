@@ -31,7 +31,7 @@ const Filterbar = ({ isSidebarVisible, toggleSidebar }) => {
         <div>
           <select name="sort" id="sortDropDown">
             {sortingOptions.map((option, index) => (
-              <option key={index} value={option}>
+              <option key={index} value={option} className="opt">
                 {option}
               </option>
             ))}

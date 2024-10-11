@@ -2,7 +2,7 @@
     width: 20%;
     height: 100%;
     padding: 1.5rem;
-    /* background-color: #f9f9f9; */
+    
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     margin-right: 1.5rem;
@@ -11,11 +11,11 @@
 .custmizbleContainer {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    
     padding: 1rem;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   
 }
 
 .custmizbleContainer label {
@@ -67,3 +67,10 @@
         display: none;
     }
 }
+hr {
+    border: none;         /* Remove default border */
+    height: 1px;         /* Set height */
+    background-color: #dadada; /* Set color */
+
+  }
+  

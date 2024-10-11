@@ -77,9 +77,10 @@
     font-size: small;
     font-weight: 650;
     padding: 10px;
+    outline: none;
 }
 
-#sortDropDown option {
+.opt {
     padding-left: 30px;
 }
 

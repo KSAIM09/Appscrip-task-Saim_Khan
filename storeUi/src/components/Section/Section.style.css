@@ -54,11 +54,21 @@
 }
 
 .productsContainer {
-    /* margin-left: 20px; */
     display: grid;
-    grid-template-columns: auto auto auto;
+    gap: 16px; /* Optional: Space between cards */
+}
 
-    @media screen and (max-width: 767px) {
-        grid-template-columns: auto auto;
+.fourColumns {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns when sidebar is hidden */
+}
+
+.threeColumns {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns when sidebar is shown */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .productsContainer {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
     }
 }

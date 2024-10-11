@@ -1,8 +1,16 @@
 import "./ProductCard.style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faHeart as regularHeart } from "@fortawesome/free-regular-svg-icons";
+import { faHeart as solidHeart } from "@fortawesome/free-solid-svg-icons"; 
+import { useState } from "react";
 
 const ProductCard = ({ title, image }) => {
+  const [isLiked, setIsLiked] = useState(false); 
+
+  const toggleLike = () => {
+    setIsLiked((prev) => !prev); 
+  };
+
   return (
     <>
       <div className="cardContainer">
@@ -14,8 +22,12 @@ const ProductCard = ({ title, image }) => {
               <p className="product-description">
                 Sign in or Create account to see pricing
               </p>
-              <div>
-                <FontAwesomeIcon icon={faHeart} color="black" size="xl" />
+              <div onClick={toggleLike} style={{ cursor: 'pointer' }}>
+                <FontAwesomeIcon 
+                  icon={isLiked ? solidHeart : regularHeart} 
+                  color={isLiked ? "red" : "black"} 
+                  size="xl" 
+                />
               </div>
             </div>
           </div>
